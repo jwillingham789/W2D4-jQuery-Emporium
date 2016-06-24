@@ -1,0 +1,82 @@
+$purple_text: #ddb8e9;
+$russo: 'Russo One', sans-serif;
+$hover_blue: rgba(#81fff7, 0.8);
+
+img {
+  width: 100%;
+}
+.cover_image {
+  background-image: url("../images/galaxy.jpg");
+  background-size: cover;
+  .jumbotron {
+    background-color: transparent;
+    text-shadow: 1px 1px 10px #9025a2;
+    color: $purple_text;
+    font-family: $russo;
+    margin-bottom: 0;
+  }
+}
+blockquote {
+  color: white;
+  text-shadow: 1px 1px 10px #9025a2;
+  border: none;
+  padding-top: 0;
+  footer {
+    color: white;
+  }
+}
+.page_desc {
+  color: white;
+  text-shadow: 1px 1px 10px #9025a2;
+}
+.buttons_group {
+  button {
+    width: 120px;
+    color: rgba(#ffffff, 0.71);
+    border-radius: 10px;
+    background-color: #BE2D3C;
+    border-style: solid;
+    margin: 10px 20px 10px 20px;
+  }
+}
+button:hover {
+  box-shadow: 0 0 50px $hover_blue;
+  transition: box-shadow 0.3s;
+  color: white;
+}
+button:focus {
+
+}
+.cover_image {
+  .flex_box {
+    background-color: black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  }
+}
+.flex_box {
+  margin-top: 20px;
+  display: flex;
+  height: 500px;
+  border: 10px ridge $purple_text;
+  box-shadow: 0 0 50px white;
+  .flex_left, .flex_middle, .flex_right {
+    flex: 1;
+  }
+}
+.footer_area {
+  height: 200px;
+}
+// background-image:
+// // starry sky background
+// radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+// radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+// radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+// radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+// background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+// background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
