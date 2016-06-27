@@ -9,7 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Trade+Winds|Russo+One" rel="stylesheet">
+  <!-- Hierarchial Display CSS -->
+  <link rel="stylesheet" src="js/plug-ins/blockrain/blockrain.css">
+  <!-- Planetarium CSS -->
+  <link rel="stylesheet" href="js/plug-ins/Planet/planetarium.css">
+  <!-- My CSS -->
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -30,27 +35,28 @@
       </div>
       <div class="row">
         <div class="col-sm-12 text-center page_desc">
-          <h5>Click on a button below to explore the magic of jQuery</h4>
+          <h5>Click on a button below to explore the magic of jQuery</h5>
         </div>
       </div>
       <div class="row text-center buttons_group">
         <div class="col-sm-12">
-          <button>Click Me!</button>
-          <button>Click Me!</button>
-          <button>Click Me!</button>
+          <button class="blockBtn">Brick Game</button>
+          <button class="fireBtn">Fire Text</button>
+          <button class="planetBtn">Planetarium</button>
         </div>
       </div>
         <div class="row">
-          <div class="col-sm-12">
-            <div class="flex_box">
-              <div class="flex_left">
-
+          <div class="col-sm-12 display_box">
+            <div class="row">
+              <div class="left_box col-sm-12 hidden">
+                <div class="game"></div>
               </div>
-              <div class="flex_middle">
-
+              <div class="middle_box col-sm-12 hidden">
+                <h1 class="burning text-center">These Plug-Ins Are On Fire</h1>
               </div>
-              <div class="flex_right">
-
+              <div class="right_box col-sm-12 hidden">
+                <div class="earth planet">
+                </div>
               </div>
             </div>
           </div>
@@ -64,20 +70,16 @@
         </div>
     </div>
 
-      <!-- <svg id="my-svg" src="images/theironyard.svg">
-        <path...>
-        <path...>
-        <path...>
-      </svg> -->
   </main>
 
-  <!-- jQuery Plug-ins -->
-  <!-- <script>
-    new Vivus('my-svg', {duration: 200}, myCallback);
-  </script>
-  <script src="js/plug-ins/vivus.js"></script> -->
-  <script src="js/main.js"></script>
-
 </body>
+
+  <!-- jQuery Plug-ins -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+<script src="js/plug-ins/Burn/jquery.burn.min.js"></script>
+<script src="js/plug-ins/blockrain/blockrain.jquery.js"></script>
+<script src="js/plug-ins/Planet/jquery.planetarium.js"></script>
+<script src="js/main.js"></script>
 
 </html>
