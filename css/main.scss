@@ -62,7 +62,7 @@ button:focus {
 }
 .display_box {
   margin-top: 20px;
-  height: 500px;
+  height: 550px;
   border: 10px ridge $purple_text;
   box-shadow: 0 0 50px white;
   padding: 1px;
@@ -114,13 +114,30 @@ button:focus {
   padding-top: 80px;
 }
 
+//PLANETARIUM PLUG-IN
 .earth {
     padding-top: 120px;
     padding-left: 50px;
 }
+
+//TETRIS PLUG-IN
+.left_box {
+  text-align: center;
+}
+
 .game {
   width:300px;
   height:400px;
+}
+
+.theme-button {
+  width: 120px;
+  color: rgba(#ffffff, 0.71);
+  border-radius: 10px;
+  background-color: #BE2D3C;
+  border-style: solid;
+  margin: 10px 20px 10px 20px;
+  outline: none;
 }
 
 @media screen and (min-width: 700px) {
